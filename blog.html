@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventro | Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+  <!-- Drawer overlay & Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span></div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link">Home 2</a>
+      <a href="program.html" class="drawer-link">Program</a>
+      <a href="mentors.html" class="drawer-link">Mentors</a>
+      <a href="blog.html" class="drawer-link active">Blog</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+      <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="mentors.html" class="nav-link">Mentors</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero" style="min-height: 44vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="hero-shapes"></div>
+      <div class="container">
+        <span class="eyebrow animate-on-scroll"><i class="ph-fill ph-notebook"></i> From the partners</span>
+        <h1 class="animate-on-scroll">Ventro <span class="gradient-text">Insights</span></h1>
+        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto; max-width: 600px;">Thoughts on fundraising, product-market fit, and scaling from our partners and alumni.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-4);">
+          <!-- Card 1 -->
+          <div class="card phase-card animate-on-scroll" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="How to construct the perfect Seed deck">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Fundraising</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">How to construct the perfect Seed deck</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By Sarah Jenkins &bull; Oct 12, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">After reviewing thousands of pitches, here are the 10 slides you absolutely need to secure VC commitments...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card phase-card animate-on-scroll delay-1" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Stop building and start talking to users">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Product</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">Stop building and start talking to users</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By Marcus Chen &bull; Sep 28, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">The most common mistake early-stage founders make is writing code before validating the problem with customers...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card phase-card animate-on-scroll delay-2" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="B2B Go-To-Market strategies that scale">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Growth</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">B2B Go-To-Market strategies that scale</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By Thomas Wright &bull; Sep 15, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">Moving from founder-led sales to a predictable revenue engine requires a fundamental shift in outbound execution...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 (New) -->
+          <div class="card phase-card animate-on-scroll" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Navigating Technical Debt in Early Stage Startups">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Engineering</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">Navigating Technical Debt in Early-Stage Startups</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By Elena Rostova &bull; Sep 04, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">How to balance feature shipping velocity with sustainable architecture before tech debt slows product releases...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 (New) -->
+          <div class="card phase-card animate-on-scroll delay-1" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Building Your First 10 Engineering Hires">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Hiring</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">Building Your First 10 Engineering Hires</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By David Vance &bull; Aug 22, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">Key strategies for attracting top-tier talent when competing against Big Tech salaries with mission and equity...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6 (New) -->
+          <div class="card phase-card animate-on-scroll delay-2" style="text-align: left; align-items: flex-start; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="phase-media" style="aspect-ratio: 16/10; width: 100%; border-radius: 0; margin-bottom: 0;">
+              <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Demystifying SAFE Notes and Delaware C-Corp Setup">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; width: 100%;">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 12px; text-transform: uppercase; margin-bottom: 8px; display: block;">Venture Capital</span>
+              <a href="blog-single.html"><h3 style="text-align: left; margin-bottom: 8px; font-size: var(--size-h4);">Demystifying SAFE Notes &amp; Delaware C-Corp Setup</h3></a>
+              <p style="text-align: left; font-size: var(--size-caption); color: var(--color-secondary); margin-bottom: 12px;">By Sophia Al-Mansoor &bull; Aug 10, 2026</p>
+              <p style="text-align: left; font-size: 14px; line-height: 1.6; color: var(--color-secondary); flex-grow: 1; margin-bottom: 0;">A practical legal guide for international and US founders setting up cap tables and closing post-money SAFEs...</p>
+              <a href="blog-single.html" style="color: var(--color-accent); font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;">
+                Read Article <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Read More Articles Button at Bottom -->
+        <div style="text-align: center; margin-top: var(--space-8);" class="animate-on-scroll delay-3">
+          <a href="blog-single.html" class="btn btn-outline" style="padding: 14px 36px; font-size: var(--size-body); font-weight: 600; display: inline-flex; align-items: center; gap: 10px; border-radius: var(--radius-pill);">
+            Read More Articles <i class="ph ph-arrow-right" style="font-size: 18px;"></i>
+          </a>
+        </div>
+
+        <!-- Founder Playbooks & Free Resource Library -->
+        <div style="margin-top: var(--space-12);" class="animate-on-scroll delay-3">
+          <div class="section-header">
+            <h2>Free Founder Toolkits</h2>
+            <p>Battle-tested templates, legal guidelines, and financial models used by our portfolio founders.</p>
+          </div>
+
+          <div class="card-grid grid-3">
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-file-text" style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">The 10-Slide Seed Deck</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">Standard Figma & Keynote pitch deck structure used to raise $150M+ total.</p>
+              <a href="#" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px;"><i class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download Template</a>
+            </div>
+
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-calculator" style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">SaaS Financial Model</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">Plug-and-play Google Sheet template for projection, runway, and hiring plans.</p>
+              <a href="#" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px;"><i class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download Sheet</a>
+            </div>
+
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-strategy" style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">GTM Playbook 2026</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">Outbound sales scripts, cold email formulas, and early user interview frameworks.</p>
+              <a href="#" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px;"><i class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+          </a>
+          <p>Fueling the next generation of category-defining technology companies.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <div class="footer-links">
+            <a href="program.html" class="footer-link">Curriculum</a>
+            <a href="mentors.html" class="footer-link">Mentors</a>
+            <a href="program.html#apply" class="footer-link">Apply Now</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="blog.html" class="footer-link">Blog</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ventro Accelerator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

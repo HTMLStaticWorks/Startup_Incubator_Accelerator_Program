@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventro | Startup Incubator &amp; Accelerator - Home 2</title>
+  <meta name="description" content="Turn your MVP into a category leader with hands-on support from world-class operators and up to $500K in seed funding.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <style>
+    /* Home 2 specific styles */
+    .hero-center {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: calc(var(--nav-height) + clamp(3rem, 7vw, 6rem)) 0 clamp(3.5rem, 6vw, 6rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-center .container { position: relative; z-index: 2; }
+
+    .hero-center h1 {
+      max-width: 940px;
+      margin: 0 auto var(--space-3);
+    }
+
+    .hero-center .hero-lead {
+      max-width: 660px;
+      margin: 0 auto var(--space-4);
+    }
+
+    .hero-center .hero-actions { justify-content: center; }
+    .hero-center .hero-trust { justify-content: center; border-top: none; }
+
+    /* Rotating headline word */
+    .rotator {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+    }
+
+    .rotator-word {
+      display: inline-block;
+      animation: rotatorIn 0.5s var(--ease-out);
+    }
+
+    @keyframes rotatorIn {
+      from { opacity: 0; transform: translateY(0.35em) rotateX(-40deg); }
+      to   { opacity: 1; transform: translateY(0) rotateX(0); }
+    }
+
+    .rotator-caret {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      margin-left: 2px;
+      vertical-align: -0.08em;
+      background: var(--color-accent);
+      animation: caretBlink 1s step-end infinite;
+    }
+
+    @keyframes caretBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rotator-caret { animation: none; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span></div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link active">Home 2</a>
+      <a href="program.html" class="drawer-link">Program</a>
+      <a href="mentors.html" class="drawer-link">Mentors</a>
+      <a href="blog.html" class="drawer-link">Blog</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <a href="dashboard.html" class="drawer-link">Dashboard</a>
+      <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link active">Home 2</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="mentors.html" class="nav-link">Mentors</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Centered -->
+    <section class="hero-center" style="position: relative; overflow: hidden;">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" alt="" aria-hidden="true">
+        <div class="hero-bg-overlay"></div>
+      </div>
+      <div class="hero-shapes"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <span class="hero-subtitle animate-on-scroll"><span class="eyebrow-dot"></span> Global accelerator program</span>
+        <h1 class="animate-on-scroll delay-1">
+          Build the future.<br>
+          <span class="gradient-text rotator" id="heroRotator" aria-label="Faster than ever."></span><span class="rotator-caret" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-lead animate-on-scroll delay-2">Turn your MVP into a category leader with hands-on support from world-class operators and up to $500K in seed funding.</p>
+        <div class="hero-actions animate-on-scroll delay-3">
+          <a href="program.html#apply" class="btn btn-primary btn-lg">Apply for Cohort 14 <i class="ph ph-arrow-right btn-arrow"></i></a>
+          <a href="#roadmap" class="btn btn-outline btn-lg"><i class="ph ph-map-trifold"></i> Walk the 12 weeks</a>
+        </div>
+        <div class="hero-trust animate-on-scroll delay-4">
+          <span><strong>92%</strong> raise within 6 months</span>
+          <span aria-hidden="true">&middot;</span>
+          <span><strong>85</strong> mentors on call</span>
+          <span aria-hidden="true">&middot;</span>
+          <span><strong>$1M+</strong> in founder perks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Partnership split -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="animate-on-scroll">
+            <div class="img-frame">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A Ventro cohort team in a working session">
+              <div class="img-badge">
+                <i class="ph-fill ph-users-three"></i>
+                <div>
+                  <strong>Weekly mentor sprints</strong>
+                  <span>Every Tuesday, for 12 weeks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="animate-on-scroll delay-1">
+            <span class="eyebrow"><i class="ph-fill ph-handshake"></i> Partnership</span>
+            <h2>Not just capital. True partnership.</h2>
+            <p style="font-size: var(--size-lead); font-weight: var(--weight-lead);">Our 12-week intensive is designed to compress years of learning into months.</p>
+            <ul class="feature-list">
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>Weekly mentorship sprints</strong> with operators who have done it before</span></li>
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>Direct access to Series A investors</strong> through warm, sequenced intros</span></li>
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>$1M+ in partner perks</strong> across cloud, payments and tooling</span></li>
+            </ul>
+            <a href="program.html" class="btn btn-outline">Explore program details <i class="ph ph-arrow-right btn-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE: 12-week roadmap explorer -->
+    <section class="section band" id="roadmap">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Interactive</span>
+          <h2>Walk the <span class="gradient-text">12 weeks</span></h2>
+          <p>Pick any week &mdash; or hit auto-play &mdash; to see exactly what you will be working on, who you work with, and what you ship.</p>
+        </div>
+
+        <div class="roadmap animate-on-scroll delay-1">
+          <div class="roadmap-phases" role="group" aria-label="Jump to a phase">
+            <button type="button" class="roadmap-phase is-active" data-phase="Build">Phase 1 &middot; Build</button>
+            <button type="button" class="roadmap-phase" data-phase="Growth">Phase 2 &middot; Growth</button>
+            <button type="button" class="roadmap-phase" data-phase="Raise">Phase 3 &middot; Raise</button>
+          </div>
+
+          <div class="roadmap-rail" id="rmRail" role="tablist" aria-label="Program weeks">
+            <!-- week nodes are generated by main.js -->
+          </div>
+
+          <div class="roadmap-body">
+            <div class="roadmap-detail" id="rmDetail" role="tabpanel" aria-live="polite">
+              <span class="chip" id="rmPhase">Phase 1 - Build</span>
+              <h3 id="rmTitle">&nbsp;</h3>
+              <p id="rmDesc">&nbsp;</p>
+              <ul class="roadmap-list" id="rmList"></ul>
+            </div>
+
+            <aside class="roadmap-side">
+              <div class="roadmap-week">
+                <span>Week</span>
+                <strong class="num" id="rmWeek">01</strong>
+              </div>
+              <dl>
+                <div class="roadmap-meta">
+                  <dt>Milestone</dt>
+                  <dd id="rmMilestone">&nbsp;</dd>
+                </div>
+                <div class="roadmap-meta">
+                  <dt>Lead mentor</dt>
+                  <dd id="rmMentor">&nbsp;</dd>
+                </div>
+                <div class="roadmap-meta">
+                  <dt>What you ship</dt>
+                  <dd id="rmOutput">&nbsp;</dd>
+                </div>
+              </dl>
+              <div class="roadmap-controls">
+                <button type="button" class="roadmap-step" id="rmPrev" aria-label="Previous week"><i class="ph ph-caret-left"></i></button>
+                <button type="button" class="roadmap-step" id="rmNext" aria-label="Next week"><i class="ph ph-caret-right"></i></button>
+                <button type="button" class="roadmap-play" id="rmPlay"><i class="ph-fill ph-play"></i> Auto-play</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Impact Stats (dark strip) -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-chart-line-up"></i> By the numbers</span>
+          <h2>Proof the model <span class="gradient-text">works</span></h2>
+          <p>Seven years, thirteen cohorts, and a portfolio that keeps compounding long after Demo Day.</p>
+        </div>
+
+        <div class="stats-dark animate-on-scroll delay-1">
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="250" data-suffix="+">0</p>
+            <p class="stat-label">Startups funded<span class="stat-note">Since 2019</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="150" data-prefix="$" data-suffix="M">0</p>
+            <p class="stat-label">Capital raised<span class="stat-note">By our alumni</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="4.5" data-prefix="$" data-suffix="B">0</p>
+            <p class="stat-label">Portfolio value<span class="stat-note">Combined</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="30" data-suffix="+">0</p>
+            <p class="stat-label">Unicorn exits<span class="stat-note">IPO or acquisition</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Proven Outcomes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-trophy"></i> Outcomes</span>
+          <h2>Proven Outcomes</h2>
+          <p>Three companies from three different cohorts, all of them further along than they expected to be.</p>
+        </div>
+        <div class="card-grid grid-3 animate-on-scroll delay-1">
+          <div class="card phase-card">
+            <h3>DataGrid</h3>
+            <span class="chip">Acquired for $200M</span>
+            <p style="margin-top: var(--space-2);">"Ventro completely changed our trajectory. The network is unparalleled."</p>
+            <div class="phase-meta person">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&amp;fit=crop&amp;w=160&amp;q=80" alt="Priya Raman">
+              <div>
+                <strong>Priya Raman</strong>
+                <span>CEO, DataGrid</span>
+              </div>
+            </div>
+          </div>
+          <div class="card phase-card">
+            <h3>Aura Health</h3>
+            <span class="chip">Series B &middot; $40M</span>
+            <p style="margin-top: var(--space-2);">"The mentorship was intense, but exactly what we needed to find product-market fit."</p>
+            <div class="phase-meta person">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=160&amp;q=80" alt="Tom Ashby">
+              <div>
+                <strong>Tom Ashby</strong>
+                <span>Co-founder, Aura Health</span>
+              </div>
+            </div>
+          </div>
+          <div class="card phase-card">
+            <h3>Velocity</h3>
+            <span class="chip">Y-Combinator alumni</span>
+            <p style="margin-top: var(--space-2);">"We learned how to pitch and build in ways we didn't think were possible."</p>
+            <div class="phase-meta person">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;w=160&amp;q=80" alt="Nina Okafor">
+              <div>
+                <strong>Nina Okafor</strong>
+                <span>CTO, Velocity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Founder Perks -->
+    <section class="section band-plain">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-gift"></i> Perks</span>
+          <h2>$1M+ Exclusive Founder Perks</h2>
+          <p>Every Ventro startup unlocks instant access to Tier-1 cloud credits, legal setup templates, and developer tooling.</p>
+        </div>
+
+        <div class="card-grid perk-grid animate-on-scroll delay-1">
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-cloud"></i>
+              <h4>AWS Activate</h4>
+            </div>
+            <p class="perk-value">$100,000 credits</p>
+            <p>2 years of cloud infrastructure credits + 1:1 solution architect sessions.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-credit-card"></i>
+              <h4>Stripe Scale</h4>
+            </div>
+            <p class="perk-value">$50,000 fee-free</p>
+            <p>Zero payment processing fees on your first $50K revenue + priority fraud review.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-robot"></i>
+              <h4>OpenAI API</h4>
+            </div>
+            <p class="perk-value">$25,000 API grant</p>
+            <p>Direct access to fine-tuning endpoints and dedicated rate limits.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-circles-three-plus"></i>
+              <h4>HubSpot &amp; Notion</h4>
+            </div>
+            <p class="perk-value">90% off year one</p>
+            <p>Full CRM suite + enterprise workspace setup for high-speed collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel animate-on-scroll">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Applications closing</span>
+          <h2>Ready to join them?</h2>
+          <p>Submit your pitch today. It takes ten minutes, and every application is read by a partner.</p>
+          <div class="cta-actions">
+            <a href="program.html#apply" class="btn btn-primary btn-lg">Apply now <i class="ph ph-arrow-right btn-arrow"></i></a>
+            <a href="mentors.html" class="btn btn-outline btn-lg">Meet the mentors</a>
+          </div>
+          <div class="cta-meta">
+            <span><i class="ph-fill ph-currency-circle-dollar"></i> Up to $500K in seed funding</span>
+            <span><i class="ph-fill ph-seal-check"></i> No board seat required</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer matches index -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span>
+          </a>
+          <p>Fueling the next generation of category-defining technology companies.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Program</h4>
+          <div class="footer-links">
+            <a href="program.html" class="footer-link">Curriculum</a>
+            <a href="mentors.html" class="footer-link">Mentors</a>
+            <a href="program.html#apply" class="footer-link">Apply Now</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="blog.html" class="footer-link">Blog</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ventro Accelerator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* Rotating hero word - home 2 only */
+    (function () {
+      const el = document.getElementById('heroRotator');
+      if (!el) return;
+
+      const words = ['Faster than ever.', 'Backed by operators.', 'Funded in 12 weeks.'];
+      let i = 0;
+
+      function paint() {
+        el.innerHTML = '<span class="rotator-word">' + words[i] + '</span>';
+        el.setAttribute('aria-label', words[i]);
+      }
+
+      paint();
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      setInterval(() => {
+        i = (i + 1) % words.length;
+        paint();
+      }, 3600);
+    })();
+  </script>
+</body>
+</html>
