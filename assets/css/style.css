@@ -808,7 +808,7 @@ a.btn-primary {
   filter: saturate(1.08);
 }
 
-/* Sits directly under the Login button rather than at the foot of the drawer */
+/* Sits between the nav links and the Login button */
 .drawer-footer {
   display: flex;
   gap: var(--space-2);
@@ -816,6 +816,8 @@ a.btn-primary {
   padding-top: var(--space-3);
   border-top: 1px solid var(--surface-border);
 }
+
+.drawer-footer + .drawer-link-primary { margin-top: var(--space-3); }
 
 .drawer-overlay {
   position: fixed;
