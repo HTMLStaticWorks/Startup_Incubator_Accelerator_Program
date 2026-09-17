@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <title>Ventro | Contact Us</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -14,7 +16,7 @@
   <div class="drawer-overlay"></div>
   <aside class="mobile-drawer">
     <div class="drawer-header">
-      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span></div>
+      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro</div>
       <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
     </div>
     <nav class="drawer-links">
@@ -37,7 +39,7 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="nav-brand">
-        <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+        <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro
       </a>
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
@@ -70,44 +72,126 @@
 
     <section class="section">
       <div class="container">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); max-width: 1000px; margin: 0 auto;">
-          <div class="animate-on-scroll">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div class="contact-card animate-on-scroll">
+            <div class="contact-card-head">
+              <span class="eyebrow"><span class="eyebrow-dot"></span> Send a message</span>
+              <h3>Tell us what you need</h3>
+              <p>Fill this in and the right person on the team will reply &mdash; usually within two business days.</p>
+            </div>
             <form data-validate="true" action="https://formspree.io/f/placeholder_contact">
-              <div class="form-group">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" name="name" required>
-                <div class="error-message"></div>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" required>
-                <div class="error-message"></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" name="name" required placeholder="Jane Okafor">
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" required placeholder="jane@startup.com">
+                  <div class="error-message"></div>
+                </div>
               </div>
               <div class="form-group">
                 <label class="form-label">Message</label>
-                <textarea class="form-control" name="message" rows="5" required></textarea>
+                <textarea class="form-control" name="message" rows="6" required
+                  placeholder="A sentence or two about your company and what you'd like to discuss."></textarea>
                 <div class="error-message"></div>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary btn-lg contact-submit">
+                Send message <i class="ph ph-paper-plane-tilt"></i>
+              </button>
+              <p class="contact-privacy"><i class="ph ph-lock-simple"></i> We never share your details with third
+                parties.</p>
             </form>
           </div>
-          
-          <div class="animate-on-scroll delay-1">
-            <div style="background: var(--surface-color); padding: var(--space-4); border-radius: var(--radius-global); margin-bottom: var(--space-4);">
-              <h3 style="margin-bottom: 8px;">Ventro HQ</h3>
-              <p style="margin-bottom: 0;">100 Innovation Drive<br>San Francisco, CA 94105</p>
+
+          <!-- Details -->
+          <aside class="contact-aside animate-on-scroll delay-1">
+            <div class="contact-card">
+              <h3 class="contact-aside-title">Ventro HQ</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-ico"><i class="ph-fill ph-map-pin"></i></span>
+                  <div>
+                    <strong>Visit us</strong>
+                    <span>100 Innovation Drive<br>San Francisco, CA 94105</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-ico"><i class="ph-fill ph-envelope-simple"></i></span>
+                  <div>
+                    <strong>Email</strong>
+                    <a href="mailto:hello@ventro.vc">hello@ventro.vc</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-ico"><i class="ph-fill ph-phone"></i></span>
+                  <div>
+                    <strong>Call</strong>
+                    <a href="tel:+14155550142">+1 (415) 555-0142</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-ico"><i class="ph-fill ph-clock"></i></span>
+                  <div>
+                    <strong>Office hours</strong>
+                    <span>Monday to Friday, 9am&ndash;6pm PT</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="contact-social">
+                <span class="contact-social-label">Follow along</span>
+                <div class="footer-social">
+                  <a href="#" aria-label="Ventro on LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                  <a href="#" aria-label="Ventro on X"><i class="ph-fill ph-x-logo"></i></a>
+                  <a href="#" aria-label="Ventro on Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                  <a href="#" aria-label="Ventro on YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+                  <a href="#" aria-label="Ventro on GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                </div>
+              </div>
             </div>
-            <div style="width: 100%; height: 250px; background: #ddd; border-radius: var(--radius-global); display: flex; align-items: center; justify-content: center;">
-              <!-- Google Maps iframe placeholder -->
-              <span style="color: #666;"><i class="ph ph-map-pin" style="font-size: 32px;"></i> Map Placeholder</span>
-            </div>
-          </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find us on the map -->
+    <section class="section band">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-map-pin"></i> Find us</span>
+          <h2>Ventro HQ, <span class="gradient-text">San Francisco</span></h2>
+          <p>100 Innovation Drive, SoMa &mdash; a ten minute walk from Montgomery St BART.</p>
         </div>
 
+        <div class="map-frame animate-on-scroll delay-1">
+          <iframe
+            src="https://www.google.com/maps?q=100%20Innovation%20Drive%2C%20San%20Francisco%2C%20CA%2094105&amp;output=embed"
+            title="Map showing Ventro HQ in San Francisco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="map-actions animate-on-scroll delay-2">
+          <a class="btn btn-outline"
+            href="https://www.google.com/maps/search/?api=1&amp;query=100+Innovation+Drive,+San+Francisco,+CA+94105"
+            target="_blank" rel="noopener">
+            <i class="ph ph-navigation-arrow"></i> Get directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
         <!-- Frequently Asked Questions (FAQ) -->
-        <div style="margin-top: var(--space-12);" class="animate-on-scroll delay-2">
+        <div class="animate-on-scroll delay-2">
           <div class="section-header">
-            <h2>Frequently Asked Questions</h2>
+            <span class="eyebrow"><i class="ph-fill ph-question"></i> FAQ</span>
+            <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
             <p>Everything you need to know about Ventro before reaching out.</p>
           </div>
 
@@ -171,7 +255,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
-            <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+            <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro
           </a>
           <p>Fueling the next generation of category-defining technology companies.</p>
         </div>

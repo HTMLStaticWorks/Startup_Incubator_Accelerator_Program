@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#090E17" />
+    </linearGradient>
+
+    <!-- Rocket Emerald Accent Gradient -->
+    <linearGradient id="ventro-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E9488" />
+      <stop offset="50%" stop-color="#198246" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <!-- Thrust Glow Gradient -->
+    <linearGradient id="thrust-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Glow Filter for High DPR -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Squircle Background -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg-grad)" stroke="#198246" stroke-width="8" stroke-opacity="0.4" />
+
+  <!-- Ambient Light Backdrop -->
+  <circle cx="340" cy="172" r="140" fill="#198246" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Rocket & Speed Trails Group -->
+  <g transform="translate(0, 0)">
+    <!-- Speed / Trajectory Lines -->
+    <path d="M 110 370 Q 180 370 230 320" fill="none" stroke="url(#ventro-accent)" stroke-width="12" stroke-linecap="round" opacity="0.4" />
+    <path d="M 90 410 Q 190 410 270 330" fill="none" stroke="url(#ventro-accent)" stroke-width="14" stroke-linecap="round" opacity="0.7" />
+
+    <!-- Exhaust / Thrust Trail -->
+    <path d="M 160 352 L 205 307 C 190 295 175 300 150 325 C 125 350 130 365 142 350 Z" fill="#F59E0B" />
+    <path d="M 178 334 L 214 298 C 205 288 192 292 172 312 C 152 332 156 345 166 335 Z" fill="#34D399" />
+
+    <!-- Rocket Body Main Shape -->
+    <path d="M 380 132 
+             C 380 132, 290 140, 220 220
+             C 195 248, 190 280, 190 280
+             C 190 280, 222 275, 250 250
+             C 330 180, 380 132, 380 132 Z" 
+          fill="url(#ventro-accent)" />
+
+    <!-- Rocket Right Wing -->
+    <path d="M 285 227 L 335 292 C 315 297 290 292 270 272 Z" fill="#0E9488" />
+
+    <!-- Rocket Left Wing -->
+    <path d="M 227 285 L 162 335 C 157 315 162 290 182 270 Z" fill="#146B39" />
+
+    <!-- Porthole Window -->
+    <circle cx="310" cy="202" r="24" fill="#090E17" stroke="#34D399" stroke-width="6" />
+    <circle cx="310" cy="202" r="10" fill="#34D399" />
+
+    <!-- Front Nosecone Tip Highlight -->
+    <path d="M 380 132 C 360 140, 340 155, 330 165 C 345 155, 365 140, 380 132 Z" fill="#A7F3D0" />
+  </g>
+</svg>

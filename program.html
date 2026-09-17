@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <title>Ventro | The Program</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Drawer overlay & Drawer -->
   <div class="drawer-overlay"></div>
   <aside class="mobile-drawer">
     <div class="drawer-header">
-      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro<span>.</span></div>
+      <div class="nav-brand"><i class="ph-fill ph-rocket-launch"></i>Ventro</div>
       <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
     </div>
     <nav class="drawer-links">
@@ -37,7 +43,7 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="nav-brand">
-        <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+        <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro
       </a>
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
@@ -50,7 +56,8 @@
       </nav>
       <div class="nav-actions">
         <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
-        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="ph ph-arrows-left-right"></i></button>
         <a href="login.html" class="btn btn-primary btn-sm">Login</a>
         <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
       </div>
@@ -59,47 +66,56 @@
 
   <main>
 
-    <section class="hero page-hero" style="min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <section class="hero page-hero"
+      style="min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center;">
       <div class="hero-shapes"></div>
       <div class="container">
         <span class="eyebrow animate-on-scroll"><i class="ph-fill ph-path"></i> 12-week curriculum</span>
         <h1 class="animate-on-scroll">The Ventro <span class="gradient-text">Cohort Program</span></h1>
-        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto; max-width: 600px;">A 12-week intensive curriculum designed to help you find product-market fit and raise your next round.</p>
+        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto; max-width: 600px;">A 12-week intensive
+          curriculum designed to help you find product-market fit and raise your next round.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <h2>Program Phases</h2>
+          <span class="eyebrow"><i class="ph-fill ph-path"></i> Curriculum</span>
+          <h2>Program <span class="gradient-text">Phases</span></h2>
           <p>Structured milestones to keep you focused on execution.</p>
         </div>
-        
-        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6); max-width: 800px; margin: 0 auto;">
+
+        <div class="phase-steps">
           <!-- Phase 1 -->
-          <div class="animate-on-scroll delay-1" style="display: flex; gap: var(--space-4); background: var(--surface-color); padding: var(--space-4); border-radius: var(--radius-global); border: 1px solid var(--surface-border);">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; flex-shrink: 0;">1</div>
-            <div>
-              <h3 style="margin-bottom: 8px;">Weeks 1-4: Onboarding & Build</h3>
-              <p>We start with a deep dive into your metrics and product roadmap. The goal is to establish a rigorous weekly sprint cycle, talk to 100 users, and refine your core value proposition.</p>
+          <div class="phase-step animate-on-scroll delay-1">
+            <div class="phase-step-num">1</div>
+            <div class="phase-step-body">
+              <span class="phase-step-weeks">Weeks 1&ndash;4</span>
+              <h3>Onboarding &amp; Build</h3>
+              <p>We start with a deep dive into your metrics and product roadmap. The goal is to establish a rigorous
+                weekly sprint cycle, talk to 100 users, and refine your core value proposition.</p>
             </div>
           </div>
-          
+
           <!-- Phase 2 -->
-          <div class="animate-on-scroll delay-2" style="display: flex; gap: var(--space-4); background: var(--surface-color); padding: var(--space-4); border-radius: var(--radius-global); border: 1px solid var(--surface-border);">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; flex-shrink: 0;">2</div>
-            <div>
-              <h3 style="margin-bottom: 8px;">Weeks 5-8: Mentorship & Growth</h3>
-              <p>You'll be paired with 3-4 specialized mentors matching your industry and growth bottlenecks. Focus shifts to scalable acquisition, optimizing unit economics, and executing GTM experiments.</p>
+          <div class="phase-step animate-on-scroll delay-2">
+            <div class="phase-step-num">2</div>
+            <div class="phase-step-body">
+              <span class="phase-step-weeks">Weeks 5&ndash;8</span>
+              <h3>Mentorship &amp; Growth</h3>
+              <p>You'll be paired with 3-4 specialized mentors matching your industry and growth bottlenecks. Focus
+                shifts to scalable acquisition, optimizing unit economics, and executing GTM experiments.</p>
             </div>
           </div>
-          
+
           <!-- Phase 3 -->
-          <div class="animate-on-scroll delay-3" style="display: flex; gap: var(--space-4); background: var(--surface-color); padding: var(--space-4); border-radius: var(--radius-global); border: 1px solid var(--surface-border);">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; flex-shrink: 0;">3</div>
-            <div>
-              <h3 style="margin-bottom: 8px;">Weeks 9-12: Fundraise & Demo Day</h3>
-              <p>Intensive pitch practice, refining your data room, and mock VC meetings. It culminates in Demo Day, where you'll present to an audience of 300+ verified early-stage investors.</p>
+          <div class="phase-step animate-on-scroll delay-3">
+            <div class="phase-step-num">3</div>
+            <div class="phase-step-body">
+              <span class="phase-step-weeks">Weeks 9&ndash;12</span>
+              <h3>Fundraise &amp; Demo Day</h3>
+              <p>Intensive pitch practice, refining your data room, and mock VC meetings. It culminates in Demo Day,
+                where you'll present to an audience of 300+ verified early-stage investors.</p>
             </div>
           </div>
         </div>
@@ -107,54 +123,68 @@
     </section>
 
     <!-- Weekly Masterclasses & Practical Workshops -->
-    <section class="section" style="background-color: var(--surface-color); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
+    <section class="section"
+      style="background-color: var(--surface-color); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border);">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <h2>Weekly Masterclasses</h2>
+          <span class="eyebrow"><i class="ph-fill ph-chalkboard-teacher"></i> Masterclasses</span>
+          <h2>Weekly <span class="gradient-text">Masterclasses</span></h2>
           <p>No fluff. Tactical 60-minute workshops led by founders who have built $100M+ companies.</p>
         </div>
 
         <div class="card-grid grid-3 animate-on-scroll delay-1">
-          <div class="card phase-card" style="text-align: left; align-items: flex-start;">
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
             <div class="phase-media">
-              <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cap Table &amp; SAFE Law legal documents and consultation">
-              <div style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
-                <span style="font-size: 12px; font-weight: bold; background: var(--color-accent); color: #fff; padding: 4px 10px; border-radius: 12px; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">Week 2</span>
-                <span style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+              <img src="assets/images/masterclass-cap-table-law.jpg"
+                alt="Cap Table &amp; SAFE Law legal documents and consultation">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">Week 2</span>
+                <span
+                  style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
                   <i class="ph-fill ph-scales" style="font-size: 18px; color: #fff;"></i>
                 </span>
               </div>
             </div>
             <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Cap Table &amp; SAFE Law</h3>
-            <p style="font-size: var(--size-caption); margin: 0;">Structuring Delaware C-Corps, equity splits, option pools, and avoiding toxic investor term clauses.</p>
+            <p style="font-size: var(--size-caption); margin: 0;">Structuring Delaware C-Corps, equity splits, option
+              pools, and avoiding toxic investor term clauses.</p>
           </div>
 
-          <div class="card phase-card" style="text-align: left; align-items: flex-start;">
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
             <div class="phase-media">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pricing &amp; Unit Economics SaaS analytics dashboard">
-              <div style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
-                <span style="font-size: 12px; font-weight: bold; background: var(--color-accent); color: #fff; padding: 4px 10px; border-radius: 12px; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">Week 5</span>
-                <span style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+              <img src="assets/images/masterclass-pricing-economics.jpg"
+                alt="Pricing &amp; Unit Economics SaaS analytics dashboard">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">Week 5</span>
+                <span
+                  style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
                   <i class="ph-fill ph-chart-bar" style="font-size: 18px; color: #fff;"></i>
                 </span>
               </div>
             </div>
             <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Pricing &amp; Unit Economics</h3>
-            <p style="font-size: var(--size-caption); margin: 0;">Optimizing SaaS tiers, value-based pricing, CAC paybacks, and LTV retention loops.</p>
+            <p style="font-size: var(--size-caption); margin: 0;">Optimizing SaaS tiers, value-based pricing, CAC
+              paybacks, and LTV retention loops.</p>
           </div>
 
-          <div class="card phase-card" style="text-align: left; align-items: flex-start;">
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
             <div class="phase-media">
-              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pitch Deck Storytelling presentation to investors">
-              <div style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
-                <span style="font-size: 12px; font-weight: bold; background: var(--color-accent); color: #fff; padding: 4px 10px; border-radius: 12px; backdrop-filter: blur(8px); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">Week 10</span>
-                <span style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+              <img src="assets/images/masterclass-pitch-storytelling.jpg"
+                alt="Pitch Deck Storytelling presentation to investors">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">Week 10</span>
+                <span
+                  style="background: rgba(9, 14, 23, 0.7); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
                   <i class="ph-fill ph-presentation-chart" style="font-size: 18px; color: #fff;"></i>
                 </span>
               </div>
             </div>
             <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Pitch Deck Storytelling</h3>
-            <p style="font-size: var(--size-caption); margin: 0;">Crafting an unignorable seed deck story and surviving aggressive VC Q&A sessions.</p>
+            <p style="font-size: var(--size-caption); margin: 0;">Crafting an unignorable seed deck story and surviving
+              aggressive VC Q&A sessions.</p>
           </div>
         </div>
       </div>
@@ -162,8 +192,10 @@
 
     <section class="section" style="background-color: var(--color-primary); color: var(--bg-color);">
       <div class="container text-center" style="text-align: center; max-width: 600px; margin: 0 auto;">
-        <h2 class="animate-on-scroll" style="color: var(--bg-color);">Program Benefits</h2>
-        <div class="card-grid animate-on-scroll delay-1" style="grid-template-columns: 1fr 1fr; margin-top: var(--space-6);">
+        <h2 class="animate-on-scroll" style="color: var(--bg-color);">Program <span
+            class="gradient-text">Benefits</span></h2>
+        <div class="card-grid animate-on-scroll delay-1"
+          style="grid-template-columns: 1fr 1fr; margin-top: var(--space-6);">
           <div style="text-align: center;">
             <h3 style="color: var(--color-accent); font-size: var(--size-h2); margin-bottom: 8px;">$150k</h3>
             <p style="color: var(--surface-color);">Standard SAFE Investment for 7%</p>
@@ -180,13 +212,15 @@
     <section id="apply" class="section" style="scroll-margin-top: 80px;">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <h2>Apply to Cohort 14</h2>
+          <span class="eyebrow"><i class="ph-fill ph-paper-plane-tilt"></i> Apply</span>
+          <h2>Apply to <span class="gradient-text">Cohort 14</span></h2>
           <p>Tell us about your team, your product, and the problem you're solving. Applications close October 31st.</p>
         </div>
-        
-        <div class="card animate-on-scroll delay-1" style="max-width: 800px; margin: 0 auto; text-align: left; align-items: stretch;">
+
+        <div class="card animate-on-scroll delay-1"
+          style="max-width: 800px; margin: 0 auto; text-align: left; align-items: stretch;">
           <form data-validate="true" action="https://formspree.io/f/placeholder_apply">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+            <div class="form-row">
               <div class="form-group">
                 <label class="form-label">Founder Name</label>
                 <input type="text" class="form-control" name="founder_name" required>
@@ -198,8 +232,8 @@
                 <div class="error-message"></div>
               </div>
             </div>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+
+            <div class="form-row">
               <div class="form-group">
                 <label class="form-label">Startup Name</label>
                 <input type="text" class="form-control" name="startup_name" required>
@@ -212,7 +246,7 @@
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+            <div class="form-row">
               <div class="form-group">
                 <label class="form-label">Startup Stage</label>
                 <select class="form-control" name="stage" required>
@@ -236,20 +270,23 @@
                 <div class="error-message"></div>
               </div>
             </div>
-            
+
             <div class="form-group">
               <label class="form-label">Industry / Category</label>
-              <input type="text" class="form-control" name="industry" required placeholder="e.g. B2B SaaS, FinTech, HealthTech">
+              <input type="text" class="form-control" name="industry" required
+                placeholder="e.g. B2B SaaS, FinTech, HealthTech">
               <div class="error-message"></div>
             </div>
 
             <div class="form-group">
               <label class="form-label">One-line Pitch</label>
-              <input type="text" class="form-control" name="pitch" required placeholder="What do you do in 50 words or less?">
+              <input type="text" class="form-control" name="pitch" required
+                placeholder="What do you do in 50 words or less?">
               <div class="error-message"></div>
             </div>
-            
-            <button type="submit" class="btn btn-primary" style="padding: 16px 32px; font-size: 18px; margin-top: var(--space-4);">Submit Application</button>
+
+            <button type="submit" class="btn btn-primary"
+              style="padding: 16px 32px; font-size: 18px; margin-top: var(--space-4);">Submit Application</button>
           </form>
         </div>
       </div>
@@ -260,7 +297,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
-            <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro<span>.</span>
+            <i class="ph-fill ph-rocket-launch" style="color: var(--color-accent)"></i>Ventro
           </a>
           <p>Fueling the next generation of category-defining technology companies.</p>
         </div>
@@ -295,4 +332,5 @@
   </footer>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
