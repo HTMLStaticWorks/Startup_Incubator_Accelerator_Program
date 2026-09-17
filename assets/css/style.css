@@ -808,11 +808,13 @@ a.btn-primary {
   filter: saturate(1.08);
 }
 
+/* Sits directly under the Login button rather than at the foot of the drawer */
 .drawer-footer {
-  margin-top: auto;
   display: flex;
   gap: var(--space-2);
-  padding-top: var(--space-4);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--surface-border);
 }
 
 .drawer-overlay {
@@ -1122,6 +1124,91 @@ a.btn-primary {
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+/* --- TICKER RAIL (home2) ---
+   A quieter take on the marquee: one hairline rail, a fixed label on the
+   left, and names that scroll past separated by small accent diamonds. */
+.ticker-band {
+  border-top: 1px solid var(--surface-border);
+  border-bottom: 1px solid var(--surface-border);
+  background: var(--surface-color);
+}
+
+.ticker-rail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.ticker-label {
+  flex-shrink: 0;
+  padding-right: var(--space-4);
+  border-right: 1px solid var(--surface-border);
+  font-size: var(--size-micro);
+  font-weight: var(--weight-label);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.ticker {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, #000 82%, transparent);
+  mask-image: linear-gradient(to right, #000 82%, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee 46s linear infinite;
+}
+
+.ticker:hover .ticker-track { animation-play-state: paused; }
+
+.ticker-item {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-secondary);
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.ticker-item:hover { color: var(--color-primary); }
+
+/* diamond separator between names */
+.ticker-track .ticker-item::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 var(--space-4);
+  vertical-align: middle;
+  transform: rotate(45deg);
+  background: var(--color-accent);
+  opacity: 0.55;
+}
+
+@media (max-width: 640px) {
+  .ticker-rail {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .ticker-label {
+    padding-right: 0;
+    border-right: none;
+    text-align: center;
+  }
 }
 
 /* --- QUOTE BLOCK --- */
@@ -1794,7 +1881,8 @@ a.btn-primary {
   }
 
   .animate-up { opacity: 1; transform: none; }
-  .marquee-track { animation: none; }
+  .marquee-track,
+  .ticker-track { animation: none; }
 }
 
 /* ==========================================================================
@@ -2095,6 +2183,28 @@ a.btn-primary {
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
 }
+
+/* Program benefit figures (program.html) */
+.benefit-stat {
+  text-align: center;
+  padding: var(--space-4) var(--space-3);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-color);
+  transition: transform 0.3s var(--ease-out), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-stat:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-accent);
+}
+
+.benefit-stat h3 {
+  transition: transform 0.3s var(--ease-out);
+}
+
+.benefit-stat:hover h3 { transform: scale(1.06); }
 
 /* Icon benefit tiles (mentors.html) */
 .benefit-tile {

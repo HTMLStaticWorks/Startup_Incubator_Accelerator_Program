@@ -238,6 +238,46 @@
       gap: 16px;
       padding: 16px 0;
       border-bottom: 1px solid var(--surface-border);
+      /* beats `.card > * { text-align: center }`, which would push the
+         copy away from its icon */
+      text-align: left;
+    }
+
+    /* Card heading that lines up with the icon column of the rows below it */
+    .dash-card-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: var(--space-4);
+    }
+
+    .feedback-quote { text-align: left; }
+
+    .feedback-author {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+      font-size: 12px;
+      font-weight: var(--weight-bold-inline);
+      color: var(--color-accent);
+    }
+
+    .feedback-author i { font-size: 18px; }
+
+    .dash-card-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      background: var(--color-accent-soft);
+      color: var(--color-accent);
+      flex-shrink: 0;
     }
 
     .milestone-icon {
@@ -260,6 +300,29 @@
     .milestone-item.upcoming .milestone-icon {
       background: var(--color-accent-soft);
       color: var(--color-accent);
+    }
+
+    /* Attach-file control that sits beside the message input */
+    .chat-attach {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--surface-color);
+      border: 1px solid var(--surface-border);
+      color: var(--color-secondary);
+      font-size: 20px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .chat-attach:hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+      background: var(--color-accent-soft);
     }
 
     .chat-bubble {
@@ -738,6 +801,7 @@
 
       <!-- 1. Overview -->
       <section id="overview" class="dashboard-section active">
+        <h2 style="margin-bottom: var(--space-6);">Overview</h2>
         <div class="welcome-banner">
           <div class="welcome-text">
             <span class="welcome-eyebrow"><span class="eyebrow-dot"></span> Cohort 14 &middot; Week 6 of 12</span>
@@ -779,7 +843,8 @@
 
         <div class="card-grid dash-split">
           <div class="card" style="align-items: flex-start; text-align: left;">
-            <h4 style="margin-bottom: var(--space-4);">Next Actions</h4>
+            <h4 class="dash-card-title"><span class="dash-card-icon"><i
+                  class="ph-fill ph-list-checks"></i></span>Next Actions</h4>
             <div class="milestone-item upcoming">
               <div class="milestone-icon"><i class="ph-fill ph-file-text"></i></div>
               <div>
@@ -799,14 +864,15 @@
             </div>
           </div>
           <div class="card" style="align-items: flex-start; text-align: left;">
-            <h4 style="margin-bottom: var(--space-4);">Recent Feedback</h4>
-            <div
+            <h4 class="dash-card-title"><span class="dash-card-icon"><i
+                  class="ph-fill ph-chat-circle-text"></i></span>Recent Feedback</h4>
+            <div class="feedback-quote"
               style="background: var(--surface-color); padding: 12px; border-radius: 8px; border: 1px solid var(--surface-border);">
               <p style="font-size: var(--size-caption); font-style: italic; margin-bottom: 8px;">"Your TAM calculation
                 on slide 4 needs bottom-up validation."</p>
-              <p
-                style="font-size: 12px; font-weight: var(--weight-bold-inline); color: var(--color-accent); margin: 0;">
-                - Marcus Chen</p>
+              <p class="feedback-author">
+                <i class="ph-fill ph-user-circle"></i> Marcus Chen
+              </p>
             </div>
           </div>
         </div>
@@ -995,7 +1061,11 @@
                 - 11:15 AM</span>
             </div>
           </div>
-          <div style="display: flex; gap: 12px;">
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <label class="chat-attach" title="Attach a file" aria-label="Attach a file">
+              <i class="ph ph-paperclip"></i>
+              <input type="file" hidden>
+            </label>
             <input type="text" class="form-control" placeholder="Type a message..." style="flex: 1;">
             <button class="btn btn-primary"><i class="ph ph-paper-plane-right"></i></button>
           </div>

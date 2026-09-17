@@ -63,6 +63,11 @@ function initDashboardTabs() {
         document.querySelector('.dashboard-sidebar').classList.remove('open');
         document.querySelector('.dashboard-overlay').classList.remove('open');
       }
+
+      // A new section always starts at the top, never at the old scroll offset.
+      // 'instant' overrides the page-wide `html { scroll-behavior: smooth }`,
+      // which would otherwise animate the whole way back up.
+      window.scrollTo({ top: 0, behavior: 'instant' });
     });
   });
 }
